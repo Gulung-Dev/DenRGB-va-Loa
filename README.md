@@ -27,16 +27,12 @@ Dự án này là một phần của hệ thống **bàn học thông minh** s�
 
 ## Cấu Trúc 
 
-`Example.ino`
-├── [Tên_Dự_Án_Của_Bạn].ino  # File chính (main loop, setup, MQTT handlers)
-├── LedRGBControl.h         # Định nghĩa lớp điều khiển LED RGB
-├── LedRGBControl.cpp       # Triển khai các hàm điều khiển LED RGB
-├── SpeakerControl.h        # Định nghĩa lớp điều khiển Loa
-├── SpeakerControl.cpp      # Triển khai các hàm điều khiển Loa
-└── README.md               # Mô tả dự án này
+*`Example`
+├── *`Example.ino`             # File chính (main loop, setup, MQTT handlers)
+├── * `LedRGBControl.h`        # Định nghĩa lớp điều khiển LED RGB
+├── * `LedRGBControl.cpp`      # Triển khai các hàm điều khiển LED RGB
+├── * `SpeakerControl.h`       # Định nghĩa lớp điều khiển Loa
+├── * `SpeakerControl.cpp`     # Triển khai các hàm điều khiển Loa
+└── * `README.md`              
 
-* `[TênDựÁnCủaBạn].ino`: File chính chứa logic kết nối WiFi, MQTT và xử lý lệnh.
-* `LedRGBControl.h`: File định nghĩa lớp (class) điều khiển đèn LED RGB.
-* `LedRGBControl.cpp`: File cài đặt các hàm của lớp LedRGBControl.
-* `SpeakerControl.h`: File định nghĩa lớp điều khiển loa và các tần số nốt nhạc.
-* `SpeakerControl.cpp`: File cài đặt các hàm của lớp SpeakerControl và chứa giai điệu mẫu.
+
