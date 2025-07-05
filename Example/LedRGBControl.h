@@ -1,24 +1,39 @@
-#ifndef LedRGBControl_h
-#define LedRGBControl_h
+#ifndef LED_RGB_CONTROL_H
+#define LED_RGB_CONTROL_H
 
 #include <Arduino.h>
-#include <Adafruit_NeoPixel.h>
-#include <PubSubClient.h>
+
+enum LedColorMode {
+    MODE_WHITE,
+    MODE_YELLOW
+};
 
 class LedRGBControl {
 public:
-    LedRGBControl(uint8_t pin, uint16_t numPixels);
+    LedRGBControl(int redPin, int greenPin, int bluePin); 
+
     void begin();
     void turnOn();
+    void turnOff();
     void increaseBrightness();
     void decreaseBrightness();
-    void turnOff();
-    void updateMQTTStatus(PubSubClient &client, const char* topic);
-    
+    void setBrightness(int brightness);
+    void setColorMode(LedColorMode mode);
+
+    bool isLightOn() const;
+    int getCurrentBrightness() const;
+    LedColorMode getCurrentColorMode() const { return _currentColorMode; }
+
 private:
-    Adafruit_NeoPixel strip;
-    int brightness;
-    bool isOn;
+    int _redPin;
+    int _greenPin;
+    int _bluePin;
+    
+    int _currentBrightness;
+    bool _isLightOn;
+    LedColorMode _currentColorMode;
+
+    void _applyLedColor(); 
 };
 
 #endif
