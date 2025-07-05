@@ -21,13 +21,13 @@ Dự án này là một phần của hệ thống **bàn học thông minh** s�
 ### Phần Cứng
 
 * **ESP32 Development Board:** 
-* **Đèn LED RGB (RGB KY-009): để chiếu sáng bàn.
+* **Đèn LED RGB (RGB KY-009):** để chiếu sáng bàn.
     * Các chân điều khiển (Red, Green, Blue)
 * **Loa gốm:** để phát âm thanh, dùng chung với mạch khuyếch đại âm thanh LM386
 
 ## Cấu Trúc 
 
-*`Example`\
+*`Example`*\
 ├── *`Example.ino`             # File chính (main loop, setup, MQTT handlers)\
 ├── * `LedRGBControl.h`        # Định nghĩa lớp điều khiển LED RGB\
 ├── * `LedRGBControl.cpp`      # Triển khai các hàm điều khiển LED RGB\
