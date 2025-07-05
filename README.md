@@ -28,11 +28,11 @@ Dự án này là một phần của hệ thống **bàn học thông minh** s�
 ## Cấu Trúc 
 
 *`Example`
-├── *`Example.ino`             # File chính (main loop, setup, MQTT handlers)
-├── * `LedRGBControl.h`        # Định nghĩa lớp điều khiển LED RGB
-├── * `LedRGBControl.cpp`      # Triển khai các hàm điều khiển LED RGB
-├── * `SpeakerControl.h`       # Định nghĩa lớp điều khiển Loa
-├── * `SpeakerControl.cpp`     # Triển khai các hàm điều khiển Loa
+├── *`Example.ino`             # File chính (main loop, setup, MQTT handlers)\
+├── * `LedRGBControl.h`        # Định nghĩa lớp điều khiển LED RGB\
+├── * `LedRGBControl.cpp`      # Triển khai các hàm điều khiển LED RGB\
+├── * `SpeakerControl.h`       # Định nghĩa lớp điều khiển Loa\
+├── * `SpeakerControl.cpp`     # Triển khai các hàm điều khiển Loa\
 └── * `README.md`              
 
 
