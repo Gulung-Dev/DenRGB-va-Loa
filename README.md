@@ -27,7 +27,7 @@ Dự án này là một phần của hệ thống **bàn học thông minh** s�
 
 ## Cấu Trúc 
 
-*`Example`
+*`Example`\
 ├── *`Example.ino`             # File chính (main loop, setup, MQTT handlers)\
 ├── * `LedRGBControl.h`        # Định nghĩa lớp điều khiển LED RGB\
 ├── * `LedRGBControl.cpp`      # Triển khai các hàm điều khiển LED RGB\
