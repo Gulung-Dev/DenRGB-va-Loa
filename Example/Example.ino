@@ -14,8 +14,8 @@
 #define MQTT_USERNAME       "ek0Y9bd0kSQSSyTyymSWVwnqijTaRqx0XnZChAsDzUjjIFEHTQlf5scB9kC9F58X"
 
 // --- Base Topic cho tất cả trạng thái và lệnh (đã sửa cho phù hợp flespi.io) ---
-#define FLESPIS_TOKEN_BASE_PATH     "flespi/state/platform/tokens/"   // Base path cho trạng thái
-#define FLESPIS_COMMAND_BASE_PATH   "flespi/command/platform/tokens/" // Base path cho lệnh
+#define TOKEN_BASE_PATH     "flespi/state/platform/tokens/"   // Base path cho trạng thái
+#define COMMAND_BASE_PATH   "flespi/command/platform/tokens/" // Base path cho lệnh
 
 // --- Thông tin LED ---
 #define GREEN_LED_PIN       4 
@@ -71,7 +71,7 @@ void connectWiFi() {
 
 // --- Hàm Gửi Trạng thái lên MQTT với Topic con và tên trạng thái cụ thể ---
 void sendMQTTState(const char* deviceBaseSubTopic, const char* stateName, const char* message) {
-  String fullTopic = String(FLESPIS_TOKEN_BASE_PATH) + String(deviceBaseSubTopic) + String(stateName); 
+  String fullTopic = String(TOKEN_BASE_PATH) + String(deviceBaseSubTopic) + String(stateName); 
   client.publish(fullTopic.c_str(), message);
   Serial.print("Gửi MQTT - Topic: ");
   Serial.print(fullTopic);
